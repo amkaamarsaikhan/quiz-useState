@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #29363c;
+  color: #ccc;
+}
+.card-container {
+  background-color: #14576d;
+  padding: 24px 30px;
+  border-radius: 8px;
+  width: 500px;
+}
+.card-container .header {
+  margin-bottom: 20px;
+}
+.card-container .header h1 {
+ font-size: 24px;
+}
+.card-container .header p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #dfebf6;
+  margin: 4px;
+}
+.card-container .questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-container .questions li {
+background-color: #5f7888;
+padding: 16px;
+border-radius: 10px;
+cursor: pointer;
+}
+button {
+  margin-top: 20px;
+  padding: 14px 22px;
+  border: transparent;
+  background-color: #29353c;
+  color: #efeef6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Эффектийн шилжилт */
+}
+
+button:active {
+  background-color: #1f2a30; /* Дарсан үед өнгө өөрчлөгдөх */
+  transform: scale(0.98); /* Дарсан үед товчийг жижигрүүлэх */
+}
+
+.correct {
+  border : 1px solid #17c48a;
+  color : #17c48a;
+}
+.incorrect {
+  border : 1px solid tomato;
+  color : tomato;
+}
